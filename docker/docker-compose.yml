@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  mysql:
+    image: mysql
+    restart: unless-stopped
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    command: --secure-file-priv=""
+  php:
+    build: php
+    restart: unless-stopped
+    volumes:
+      - ../:/app
+    working_dir: /app
+    profiles:
+      - donotstart
