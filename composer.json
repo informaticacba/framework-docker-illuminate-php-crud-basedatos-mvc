@@ -1,30 +1,52 @@
 {
-  "name": "mrjgreen/database",
-  "description": "Expressive Database Layer for PHP - Based on Illuminate/Database",
+  "name": "database",
+  "description": "Libreria: #Illuminate/Database, Lenguaje: #PHP, Arquitectura: #MVC, ",
   "license": "MIT",
   "keywords": [
+    "mysql",
+    "framework",
+    "crud-mvc",
     "database",
     "sql",
-    "dbal",
-    "query builder"
+    "php",
+    "html",
+    "css",
+    "json",
+    "javascript",
+    "models-views-controllers",
+    "modelos-vistas-controllers",
+    "query builder",
+    "bootstrap",
+    "adminlte",
+    "database",
+    "composer",
+    "composer.json",
+    "cdata.json", 
+    "package.json"
   ],
   "authors": [
     {
-      "name": "Joe Green",
-      "email": "joe.green0991@gmail.com"
+      "name": "Alejandro Jesus del Campillo Jaime",
+      "email": "alejandrodelcampillo@gmail.com"
+      "profile": "http://www.facebook.com/m.informatica2k.com.ar/index.php",
+      "instagram": "http://www.instagram.com/alejandrojesus946",
+      "github": "http://www.github.com/informaticacba",
     }
   ],
   "scripts": {
     "test": "php vendor/bin/phpunit"
   },
   "require": {
-    "php": ">=5.4.0",
+    "php": "<=8.0.0",
     "psr/log": "~1.0"
   },
   "require-dev": {
+    "composer/composer": "*",
+    "bootstrap/bootstrap": "*",
+    "adminlte/adminlte": "*",
     "mockery/mockery": "*",
-    "php-coveralls/php-coveralls": "^2.5",
-    "phpunit/phpunit": "~9.0"
+    "php-coveralls/php-coveralls": "<=2.5",
+    "phpunit/phpunit": "<=9.0"
   },
   "autoload": {
     "psr-4": {
